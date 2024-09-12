@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo:wght@400;600&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KittyCat - Find Your Feline Friend</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'landing.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navigation Bar -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>KittyCat</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a>Home</a></li>
+                    <li><a>Search</a></li>
+                    <li><a>Sign In</a></li>
+                    <li><a>Join Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Hero Section -->
+        <main>
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Welcome to KittyCat!</h1>
+                    <p>Your go-to platform to find or adopt a loving cat.</p>
+                    <a class="cta-button">Explore Available Cats</a>
+                </div>
+                <div class="hero-image">
+                    <img src="{% static 'images/hero-cat.jpg' %}" alt="Cover Image">
+                </div>
+            </section>
+
+            <!-- Feature Section -->
+            <section class="feature-section">
+                <div class="feature-box">
+                    <img src="{% static 'images/cat_profile.jpg' %}" alt="Feature 1">
+                    <h2>Detailed Cat Profiles</h2>
+                    <p>Browse through detailed profiles to find the perfect cat for you.</p>
+                </div>
+                <div class="feature-box">
+                    <img src="{% static 'images/cat_adoption.jpg' %}" alt="Feature 2">
+                    <h2>Easy Adoption Process</h2>
+                    <p>Enjoy a seamless and straightforward adoption process.</p>
+                </div>
+                <div class="feature-box">
+                    <img src="{% static 'images/search.jpg' %}" alt="Feature 3">
+                    <h2>Search and Filter Options</h2>
+                    <p>Use advanced search and filter options to find your ideal feline friend.</p>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section">
+                <h2>About KittyCat</h2>
+                <p>KittyCat was inspired by my passion for helping animals find loving homes. I wanted to create a platform where people could easily find and adopt cats in need. This project has been a personal journey of learning and development, and it’s a part of my portfolio for Holberton School. You can view the code on <a href="https://github.com/your-repo" target="_blank">GitHub</a>.</p>
+                <p>Connect with me:</p>
+                <ul>
+                    <li><a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/your-profile" target="_blank">GitHub</a></li>
+                    <li><a href="https://twitter.com/your-profile" target="_blank">Twitter</a></li>
+                </ul>
+                <p>Explore the deployed application here: <a>KittyCat Live</a></p>
+            </section>
+
+            <!-- Optional Video Section -->
+            <section class="video-section">
+                <h2>Our Journey</h2>
+                <video controls>
+                    <source src="{% static 'videos/intro-video.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 KittyCat. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
