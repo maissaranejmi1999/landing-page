@@ -121,6 +121,7 @@ body {
     max-width: 100%; /* Ensure images fit within their container */
     height: auto;
     border-radius: 8px;
+    border-color: #6c5b7b;
 }
 
 .feature-box h2 {
